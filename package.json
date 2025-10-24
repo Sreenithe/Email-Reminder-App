@@ -1,7 +1,4 @@
 {
-  "engines": {
-  "node": "18.x"  // Match your local version (e.g., 22.x if needed)
-}
   "name": "email-reminder-system",
   "version": "1.0.0",
   "description": "A web app for scheduling email reminders",
