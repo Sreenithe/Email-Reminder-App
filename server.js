@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public')); // Serve static files (HTML/CSS)
 
 // Connect to MongoDB Atlas
-mongoose.connect('mongodb://localhost:27017/email-reminder-app', {
+mongoose.connect(process.env.MONGO_URI, {
     // Optional Mongoose/Driver settings for compatibility
     useNewUrlParser: true,
     useUnifiedTopology: true 
