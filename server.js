@@ -1,3 +1,8 @@
+cron.schedule('* * * * *', async () => {
+  const now = new Date();
+  console.log('⏰ Cron running at', now.toISOString());
+  ...
+});
 const express = require('express');
 const mongoose = require('mongoose');
 const nodemailer = require('nodemailer');
@@ -6,7 +11,7 @@ const bodyParser = require('body-parser');
 require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 10000;
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
